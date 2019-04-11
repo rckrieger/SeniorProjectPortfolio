@@ -90,7 +90,7 @@ var summercamp = {
       "2 teachers had to chase her down while I was tasked with keeping the rest of the students calm and non-reactive. The teachers caught up to her when she tripped and sprained her ankle. She stayed home the last lesson, and I cried because I felt like we had failed her." +
       " If I could do it over I would have emailed her mom not just that she got hurt, but also recources she could look at on her own time" +
       "to help understand the material. We also should have done more to bring her confidence back up.",
-    budget: 4000,
+    budget: 5250,
     timeline: 1,
     moreStepsToTake:["Medium or Youtube series on how people can plan camps like this one", "Improve this website",
       "Read up on CS education studies to see what we should have done differently",

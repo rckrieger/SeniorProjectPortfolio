@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb868d2-9ebb-4099-af57-9a94a48c3d54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConferenceTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConferenceTimeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CultureTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CultureTimeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterviewTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterviewTimeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/Project.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="471">
-              <caret line="190" column="23" lean-forward="true" selection-start-line="190" selection-start-column="23" selection-end-line="190" selection-end-column="23" />
+              <caret line="190" column="23" selection-start-line="190" selection-start-column="23" selection-end-line="190" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -59,11 +52,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="253" column="13" lean-forward="true" selection-start-line="253" selection-start-column="13" selection-end-line="253" selection-end-column="13" />
+            <state relative-caret-position="294">
+              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#490#7166#0" />
                 <element signature="e#4324#4661#0" />
                 <element signature="e#4671#5185#0" />
                 <element signature="e#5195#6013#0" />
@@ -123,8 +115,8 @@
       <find>docSh</find>
       <find>Docume</find>
       <find>khao</find>
-      <find>yout</find>
       <find>impact</find>
+      <find>yout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554979132108</updated>
-      <workItem from="1554979138828" duration="28754000" />
+      <workItem from="1554979138828" duration="28969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28754000" />
+    <option name="totallyTimeSpent" value="28969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="127" y="25" width="1126" height="734" extended-state="0" />
@@ -445,13 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CampSlider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
@@ -493,20 +478,26 @@
     <entry file="file://$PROJECT_DIR$/src/Project.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
-          <caret line="190" column="23" lean-forward="true" selection-start-line="190" selection-start-column="23" selection-end-line="190" selection-end-column="23" />
+          <caret line="190" column="23" selection-start-line="190" selection-start-column="23" selection-end-line="190" selection-end-column="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="253" column="13" lean-forward="true" selection-start-line="253" selection-start-column="13" selection-end-line="253" selection-end-column="13" />
+        <state relative-caret-position="294">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#490#7166#0" />
             <element signature="e#4324#4661#0" />
             <element signature="e#4671#5185#0" />
             <element signature="e#5195#6013#0" />
