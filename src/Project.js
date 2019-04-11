@@ -15,6 +15,15 @@ class Project extends Component {
   }
 
   render() {
+    const timelinetype = this.props.proj.timeline;
+    let timeline;
+    if (timelinetype == 1) {
+      timeline = <CodingCampTimeline/>;
+    } else if (timelinetype == 2){
+      timeline = <CodingCampTimeline/>;
+    } else {
+      timeline = <CodingCampTimeline/>;
+  }
     return (
       <div className="ProjectBox">
         <Container>
@@ -36,17 +45,31 @@ class Project extends Component {
                 <h3>Project Summary</h3>
                   <p>{this.props.proj.projectSummary}</p>
               </div>
+              <div className= "ProblemSpace" align="left">
+                <h3>Problem Space</h3>
+                <p>{this.props.proj.problemSpace}</p>
+              </div>
             </Col>
-            <div className= "ProblemSpace" align="left">
-              <h3>Problem Space</h3>
-              <p>{this.props.proj.problemSpace}</p>
-            </div>
           </Row>
           <Row>
             <div className= "KeyPerformaceIndicators" align="left">
               <h3>Criteria For Success</h3>
-              <p>{this.props.proj.criteriaForSuccess}</p>
+              <ul>
+              {this.props.proj.criteriaForSuccess
+                .map((slot, index) =>
+                  (<li><p>{slot}</p></li>)
+              )
+              }
+              </ul>
             </div>
+          </Row>
+          <Row>
+            <div className="Timeline" align="left">
+              <h3>Timeline</h3>
+              <p>{timeline}</p>
+            </div>
+          </Row>
+          <Row>
             <div className= "Impact" align="left">
               <h3>Impact</h3>
               <p>{this.props.proj.impact}</p>
@@ -64,16 +87,6 @@ class Project extends Component {
             ))}
 
             </div>
-            <div className="Goals">
-              <h3>Goals</h3>
-              {this.props.proj.goals.map((goal, index) => (
-                <h5>"{goal}"</h5>
-              ))}
-            </div>
-            <div className="Timeline" align="left">
-              <h3>Timeline</h3>
-              <p>{this.props.proj.timeline}</p>
-            </div>
             <div className="Feedback" align="left">
               <h3>Feedback</h3>
               {this.props.proj.feedback.map((review, index) =>
@@ -82,9 +95,6 @@ class Project extends Component {
                 ))
               }
             </div>
-          </Row>
-          <Row>
-            <CodingCampTimeline/>
           </Row>
           <Row>
             <div lassName="Requirements" align="left">

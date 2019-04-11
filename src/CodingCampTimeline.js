@@ -14,17 +14,35 @@ class CodingCampTimeline extends Component {
   render() {
     return (
       <Timeline minEvents={5} placeholder>
-        <TimelineEvent icon={FaRegFileAlt} title='Em rascunho' subtitle='26/03/2019 09:51'/>
+        <TimelineEvent icon={FaRegFileAlt} title='April' subtitle='26/03/2019 09:51'/>
         <TimelineEvent
           color='#87a2c7'
           icon={FaRegCalendarCheck}
-          title='Agendado'
+          title='May'
           subtitle='26/03/2019 09:51'
         />
         <TimelineEvent
           color='#9c2919'
           icon={FaBug}
-          title='Erro'
+          title='June'
+          subtitle='26/03/2019 09:51'
+          action={{
+            label: 'Ver detalhes...', onClick: () => window.alert('Erro!')
+          }}
+        />
+        <TimelineEvent
+          color='#9c2919'
+          icon={FaBug}
+          title='July'
+          subtitle='26/03/2019 09:51'
+          action={{
+            label: 'Ver detalhes...', onClick: () => window.alert('Erro!')
+          }}
+        />
+        <TimelineEvent
+          color='#9c2919'
+          icon={FaBug}
+          title='August'
           subtitle='26/03/2019 09:51'
           action={{
             label: 'Ver detalhes...', onClick: () => window.alert('Erro!')

@@ -12,13 +12,13 @@ var summercamp = {
     photos: [khoa],
     projectSummary: "When I was researching Seattle to prepare for my Microsoft internship I noticed the area had many free high school camps but very few middle school ones, and being a tech hub the city had an abundance of interns who could code. So I thought why not give the interns the opportunity to teach and the girls the opportunity to learn to code this summer? I teamed up with interns from Microsoft, Amazon, and Google interns to teach 40 girls and allies C# (http://codecadets.wixsite.com/ home). What made the camp unique was besides being the only free coding camp for middle schoolers in the area, we introduced the students to full time engineers and PMs who are thriving in tech via the Q&As so they can see that they could grow up to succeed too. ",
     problemSpace: "Computer Science in Low Income Communities",
-    criteriaForSuccess:["","b","c"],
+    criteriaForSuccess:["a","b"],
     impact: "Taught 30 middle schoolers",
     lessonsLearned: ["Plan guest speakers ahead of time", "delegate", "seperated internal and extrernal communication"],
     doDifferently: ["Plan less  currculum", "Being right"],
     goals: ["Get where I am going fast", "Experience the most I can on fieldtrips"],
     budget: 4000,
-    timeline: "",
+    timeline: 1,
     feedback:[],
     psychReq: [["Service Project consisting of such activities as creating a manual for a community organization, creating/organizing an event or workshop for a community organization, or making an educational product",
     "created a summer camp with 7 sessions"]],
@@ -41,7 +41,9 @@ var summercamp = {
     "should give evidence that the student has acquired the ability to skillfully\n" +
     "communicate on a technical subject to an audience less knowledgeable\n" +
     "than the author. All computer programs are to be completely and fully\n" +
-    "documented.","see emails bellow and this github"]]
+    "documented.","see emails bellow and this github"]],
+    myResponsibilities:[],
+    remainingPhotos: []
 };
 var industryImpact = {
     name: "Creating Industry Change Bottom-up",
@@ -49,12 +51,12 @@ var industryImpact = {
     projectSummary: "",
     problemSpace: "When my dad tried signing my sisters up for coding summercamp, he only found offerings",
     impact: "Taught 30 middle schoolers",
-    criteriaForSuccess:["a","b","c"],
+    criteriaForSuccess:["a","b"],
     lessonsLearned: ["Plan guest speakers ahead of time", "delegate", "seperated internal and extrernal communication"],
     doDifferently: ["Plan less  currculum", "Being right"],
     goals: ["Get where I am going fast", "Experience the most I can on fieldtrips"],
     budget: 0,
-    timeline: "",
+    timeline: 2,
     feedback: [],
     psychReq: [["Service Project consisting of such activities as creating a manual for a community organization, creating/organizing an event or workshop for a community organization, or making an educational product",
         "created a summer camp with 7 sessions"]],
@@ -77,7 +79,11 @@ var industryImpact = {
         "should give evidence that the student has acquired the ability to skillfully\n" +
         "communicate on a technical subject to an audience less knowledgeable\n" +
         "than the author. All computer programs are to be completely and fully\n" +
-        "documented.","see emails bellow and this github"]]
+        "documented.","see emails bellow and this github"]],
+    myResponsibilities:[],
+    remainingPhotos: []
+
+
 };
 
 var conferences = {
@@ -86,12 +92,12 @@ var conferences = {
     projectSummary: "",
     problemSpace: "When my dad tried signing my sisters up for coding summercamp, he only found offerings",
     impact: "Taught 30 middle schoolers",
-    criteriaForSuccess:["a","b","c"],
+    criteriaForSuccess:["a","b"],
     lessonsLearned: ["Plan guest speakers ahead of time", "delegate", "seperated internal and extrernal communication"],
     doDifferently: ["Plan less  currculum", "Being right"],
     goals: ["Get where I am going fast", "Experience the most I can on fieldtrips"],
     budget: 0,
-    timeline:"",
+    timeline: 3,
     feedback: [],
     psychReq: [["Service Project consisting of such activities as creating a manual for a community organization, creating/organizing an event or workshop for a community organization, or making an educational product",
         "created a summer camp with 7 sessions"]],
@@ -114,7 +120,10 @@ var conferences = {
         "should give evidence that the student has acquired the ability to skillfully\n" +
         "communicate on a technical subject to an audience less knowledgeable\n" +
         "than the author. All computer programs are to be completely and fully\n" +
-        "documented.","see emails bellow and this github"]]
+        "documented.","see emails bellow and this github"]],
+    myResponsibilities:[],
+    remainingPhotos: []
+
 };
 
 
