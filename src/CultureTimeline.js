@@ -3,7 +3,7 @@ import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline'
 import { FaBug, FaRegCalendarCheck, FaRegFileAlt } from 'react-icons/fa'
 import Project from "./Project";
 
-class CodingCampTimeline extends Component {
+class CultureTimeline extends Component {
   constructor(props) {
     super(props);
     this.props = {
@@ -57,4 +57,4 @@ class CodingCampTimeline extends Component {
   }
 }
 
-  export default CodingCampTimeline;
+  export default CultureTimeline;

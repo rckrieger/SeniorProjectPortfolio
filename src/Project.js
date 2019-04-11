@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import CodingCampTimeline from './CodingCampTimeline';
-import Radar from 'react-d3-radar';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootswatch/spacelab/bootstrap.css";
 import { Navbar, NavItem, Nav, Container, Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
-import khoa from './khoa.jpg';
+import YouTube from 'react-youtube';
+import CultureTimeline from './CultureTimeline';
+import InterviewTimeline from './InterviewTimeline';
+import ConferenceTimeline from './ConferenceTimeline';
 
 class Project extends Component {
   constructor(props) {
@@ -19,12 +21,55 @@ class Project extends Component {
     const timelinetype = this.props.proj.timeline;
     let timeline;
     let Budget;
+    let vidId;
+    let docShown;
+    let youtube;
+    const opts = {
+      height: '315',
+      width: '560',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 0
+      }
+    };
     if (timelinetype == 1) {
       timeline = <CodingCampTimeline/>;
+      vidId="pBIhRuaD6Qw";
+      docShown = <Slider {...documentationSliderSettings}>{this.props.proj.emails
+        .map((doc, index) =>
+          (<img src={doc}/>)
+        )
+      }
+      </Slider>;
+      youtube = <YouTube
+        videoId= 'pBIhRuaD6Qw'
+        opts={opts}
+        onReady={this._onReady}
+      />;
     } else if (timelinetype == 2){
-      timeline = <CodingCampTimeline/>;
-    } else {
-      timeline = <CodingCampTimeline/>;
+      timeline = <CultureTimeline/>;
+    }
+    else if (timelinetype == 3){
+      timeline = <InterviewTimeline/>;
+      docShown = <Slider {...documentationSliderSettings}>{this.props.proj.emails
+        .map((doc, index) =>
+          (<img src={doc}/>)
+        )
+      }
+      </Slider>;
+      vidId = "md9AbdXstLY";
+      youtube = <YouTube
+        videoId= 'md9AbdXstLY'
+        opts={opts}
+        onReady={this._onReady}
+      />;
+    }else {
+      timeline = <ConferenceTimeline/>;
+      vidId = "VlaglRIahnc";
+      youtube = <YouTube
+        videoId= 'VlaglRIahnc'
+        opts={opts}
+        onReady={this._onReady}
+      />;
     }
     if (this.props.proj.budget != 0) {
       Budget =  <div align="left"><h3>Budget</h3>
@@ -39,6 +84,13 @@ class Project extends Component {
       Budget = <div></div>;
     }
     let sliderSettings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+    };
+    let documentationSliderSettings = {
       dots: true,
       infinite: true,
       speed: 500,
@@ -117,6 +169,11 @@ class Project extends Component {
           </Col>
           </Row>
           <Row>
+            <div className= "Video" align="center">
+              {youtube}
+            </div>
+          </Row>
+          <Row>
           <Col md={6} sm={6}>
             <div className= "LessonsLearned" align="left">
               <h3>Lessons Learned</h3>
@@ -133,14 +190,27 @@ class Project extends Component {
               {this.props.proj.doDifferently}
             </div>
           </Col>
+          </Row>
+          <Row>
+            <Col md={7} sm={7}>
             <div className="Documents" align="left">
               <h3>Documentation</h3>
-              {this.props.proj.feedback.map((doc, index) =>
-                (
-                  <img src= {doc} alt= "id pic"/>
-                ))
-              }
+              {docShown}
             </div>
+            </Col>
+            <Col md={5} sm={5}>
+            <div className="Ways to Further the Project" align="left">
+              <h3>Ways to Further the Project</h3>
+
+              <ul>
+            {this.props.proj.moreStepsToTake.map((direction, index) =>
+              (
+                <li> <p>{direction}</p> </li>
+              ))
+            }
+            </ul>
+            </div>
+            </Col>
           </Row>
           <Row>
             <div lassName="Requirements" align="left">
@@ -158,6 +228,11 @@ class Project extends Component {
                 )
                 }
               </Col>
+            </div>
+          </Row>
+          <Row>
+            <div>
+              <a href = "https://github.com/rckrieger/SeniorProjectPortfolio/"> Github source code</a>
             </div>
           </Row>
         </Container>
