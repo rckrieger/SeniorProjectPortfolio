@@ -12,31 +12,36 @@ class CodingCampTimeline extends Component {
   }
 
   render() {
+    let MaySubtitle = "Created budget \n Applied for Ignite CS grant\n" +
+      "wrote + publicized volunteer applications: https://forms.gle/L8gXqRp5sEW53LR16\n" +
+      "evaluated nearly 90 responses: https://docs.google.com/spreadsheets/d/1sKEh3ZjUEZmID2Vxp3DQEOOXyf8ld6fBMBCLWGtjty4/edit?usp=sharing";
     return (
-      <Timeline minEvents={5} placeholder>
-        <TimelineEvent icon={FaRegFileAlt} title='April' subtitle='26/03/2019 09:51'/>
+      <Timeline minEvents={4} placeholder>
         <TimelineEvent
           color='#87a2c7'
-          icon={FaRegCalendarCheck}
           title='May'
-          subtitle='26/03/2019 09:51'
-        />
-        <TimelineEvent
-          color='#9c2919'
-          icon={FaBug}
-          title='June'
-          subtitle='26/03/2019 09:51'
+          subtitle= 'Started Planning'
           action={{
-            label: 'Ver detalhes...', onClick: () => window.alert('Erro!')
+            label: 'View Details', onClick: () => window.alert("Created budget \n Applied for Ignite CS grant\n" +
+              "wrote + publicized volunteer applications: https://forms.gle/L8gXqRp5sEW53LR16\n" +
+              "evaluated nearly 90 responses: https://docs.google.com/spreadsheets/d/1sKEh3ZjUEZmID2Vxp3DQEOOXyf8ld6fBMBCLWGtjty4/edit?usp=sharing\n" +
+            "researched low income neighborhoods to pick the most beneficial location")
           }}
         />
         <TimelineEvent
           color='#9c2919'
-          icon={FaBug}
+          title='June'
+          subtitle='26/03/2019 09:51'
+          action={{
+            label: 'View Details', onClick: () => window.alert('Organized team meetings \nSolicited funding')
+          }}
+        />
+        <TimelineEvent
+          color='#9c2919'
           title='July'
           subtitle='26/03/2019 09:51'
           action={{
-            label: 'Ver detalhes...', onClick: () => window.alert('Erro!')
+            label: 'View Details', onClick: () => window.alert('Started running camp')
           }}
         />
         <TimelineEvent
@@ -45,7 +50,7 @@ class CodingCampTimeline extends Component {
           title='August'
           subtitle='26/03/2019 09:51'
           action={{
-            label: 'Ver detalhes...', onClick: () => window.alert('Erro!')
+            label: 'View Details', onClick: () => window.alert('continued running camp')
           }}
         />
       </Timeline>

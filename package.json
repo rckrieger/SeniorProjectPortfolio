@@ -15,7 +15,9 @@
     "react-d3-radar": "^1.0.0-rc6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.5.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "predeploy": "npm run build",
