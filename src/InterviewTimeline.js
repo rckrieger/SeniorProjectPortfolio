@@ -16,42 +16,32 @@ class InterviewTimeline extends Component {
       "wrote + publicized volunteer applications: https://forms.gle/L8gXqRp5sEW53LR16\n" +
       "evaluated nearly 90 responses: https://docs.google.com/spreadsheets/d/1sKEh3ZjUEZmID2Vxp3DQEOOXyf8ld6fBMBCLWGtjty4/edit?usp=sharing";
     return (
-      <Timeline minEvents={4} placeholder>
+      <Timeline minEvents={3} placeholder>
         <TimelineEvent
           color='#87a2c7'
-          title='May'
-          subtitle= 'Started Planning'
+          title='Fall 2018'
+          subtitle= 'Started the Youtube series'
           action={{
-            label: 'View Details', onClick: () => window.alert("Created budget \n Applied for Ignite CS grant\n" +
-              "wrote + publicized volunteer applications: https://forms.gle/L8gXqRp5sEW53LR16\n" +
-              "evaluated nearly 90 responses: https://docs.google.com/spreadsheets/d/1sKEh3ZjUEZmID2Vxp3DQEOOXyf8ld6fBMBCLWGtjty4/edit?usp=sharing\n" +
-            "researched low income neighborhoods to pick the most beneficial location")
+            label: 'View Details', onClick: () => window.alert("Started the Youtube series")
           }}
         />
         <TimelineEvent
-          color='#87a2c7'
-          title='June'
+          color='#9c2919'
+          title='Continued making videos'
           subtitle='More Planning'
           action={{
-            label: 'View Details', onClick: () => window.alert('Organized team meetings \nSolicited funding\nConvinced Microsoft to Loan us 80 laptops')
+            label: 'View Details', onClick: () => window.alert('Continued making videos')
           }}
         />
         <TimelineEvent
-          color='#9c2919'
-          title='July'
-          subtitle='Started teaching'
+          color='#87a2c7'
+          title='Spring 2019'
+          subtitle='PMs at Twitch noticed my popularity in Ladies Storm Hackathons and are working with me to start a Twitch series on programming'
           action={{
-            label: 'View Details', onClick: () => window.alert('Started running camp')
+            label: 'View Details', onClick: () => window.alert('PMs at Twitch noticed my popularity in Ladies Storm Hackathons and are working with me to start a Twitch series on programming')
           }}
         />
-        <TimelineEvent
-          color='#9c2919'
-          title='August'
-          subtitle='More Teaching'
-          action={{
-            label: 'View Details', onClick: () => window.alert('continued running camp')
-          }}
-        />
+
       </Timeline>
     );
   }

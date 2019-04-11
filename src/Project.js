@@ -8,6 +8,7 @@ import YouTube from 'react-youtube';
 import CultureTimeline from './CultureTimeline';
 import InterviewTimeline from './InterviewTimeline';
 import ConferenceTimeline from './ConferenceTimeline';
+import { Document, Page } from 'react-pdf';
 
 class Project extends Component {
   constructor(props) {
@@ -15,9 +16,15 @@ class Project extends Component {
     this.props = {
       proj: props.proj,
     };
+    this.state = {
+      numPages: null,
+      pageNumber: 1,
+    };
   }
 
+
   render() {
+    const { pageNumber, numPages } = this.state;
     const timelinetype = this.props.proj.timeline;
     let timeline;
     let Budget;
@@ -47,6 +54,15 @@ class Project extends Component {
       />;
     } else if (timelinetype == 2){
       timeline = <CultureTimeline/>;
+      docShown = <div>
+        <Document
+          file="somefile.pdf"
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>Page {pageNumber} of {numPages}</p>
+      </div>;
     }
     else if (timelinetype == 3){
       timeline = <InterviewTimeline/>;
@@ -155,6 +171,8 @@ class Project extends Component {
             <div className= "Impact" align="left">
               <h3>Impact</h3>
               <p>{this.props.proj.impact}</p>
+              <a href src = "https://docs.google.com/presentation/d/1s4SX7xMf1_8M_7S6y7CSdjJpNBH05fpBfTeeKW3u-n8/edit?usp=sharing">
+              slides</a>
             </div>
           </Col>
           <Col md={5} sm={5}>

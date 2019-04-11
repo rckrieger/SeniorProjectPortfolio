@@ -19,37 +19,42 @@ class ConferenceTimeline extends Component {
       <Timeline minEvents={4} placeholder>
         <TimelineEvent
           color='#87a2c7'
-          title='May'
-          subtitle= 'Started Planning'
+          title='Fall 2017'
+          subtitle='Spoke at GHC on disabilities in tech'
           action={{
-            label: 'View Details', onClick: () => window.alert("Created budget \n Applied for Ignite CS grant\n" +
-              "wrote + publicized volunteer applications: https://forms.gle/L8gXqRp5sEW53LR16\n" +
-              "evaluated nearly 90 responses: https://docs.google.com/spreadsheets/d/1sKEh3ZjUEZmID2Vxp3DQEOOXyf8ld6fBMBCLWGtjty4/edit?usp=sharing\n" +
-            "researched low income neighborhoods to pick the most beneficial location")
+            label: 'View Details', onClick: () => window.alert('Spoke at GHC')
+          }}
+        />
+        <TimelineEvent
+          color='#9c2919'
+          title='Spring 2018'
+          subtitle='Spoke at SoCal CWIC on speaking at conferences'
+          action={{
+            label: 'View Details', onClick: () => window.alert('Spoke at SoCal CWIC')
           }}
         />
         <TimelineEvent
           color='#87a2c7'
-          title='June'
-          subtitle='More Planning'
+          title='Fall 2018'
+          subtitle='Spoke at Tapia on ethics in cyberdating'
           action={{
-            label: 'View Details', onClick: () => window.alert('Organized team meetings \nSolicited funding\nConvinced Microsoft to Loan us 80 laptops')
+            label: 'View Details', onClick: () => window.alert('Spoke at Tapia on ethics in cyberdating')
           }}
         />
         <TimelineEvent
           color='#9c2919'
-          title='July'
-          subtitle='Started teaching'
+          title='Winter 2019'
+          subtitle='Wrote 4 GHC Proposals'
           action={{
-            label: 'View Details', onClick: () => window.alert('Started running camp')
+            label: 'View Details', onClick: () => window.alert('Wrote 4 GHC Proposals')
           }}
         />
         <TimelineEvent
-          color='#9c2919'
-          title='August'
-          subtitle='More Teaching'
+          color='#87a2c7'
+          title='Spring 2019'
+          subtitle='Started Youtube series on conference speaking'
           action={{
-            label: 'View Details', onClick: () => window.alert('continued running camp')
+            label: 'View Details', onClick: () => window.alert('Started Youtube series on conference speaking')
           }}
         />
       </Timeline>

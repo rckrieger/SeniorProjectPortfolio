@@ -17,6 +17,10 @@ import cc2 from './cc2.png';
 import cc3 from './cc3.png';
 import cc4 from './cc4.png';
 import sandwhich from './sandwitch.jpeg';
+import diego from'./proof.png'
+import eman from './interviewproof.png';
+import confhead from './conferenceheadshot.jpeg';
+import viewcount from  './viewcount.png';
 
 
 var summercamp = {
@@ -120,15 +124,18 @@ var summercamp = {
 };
 var industryImpact = {
     name: "Creating Industry Change Bottom-up",
-    photos: ["khoa.JPG"],
+    photos: [diego],
     projectSummary: "Although kicking off cultural change can seem daunting, its entirely doable as an intern! " +
       "One of my 2018/2019 projects I've been working on is teaching the strategies I used during my internships to " +
       "create company-wide change at Apple, GoDaddy, and Microsoft.",
     problemSpace: "Bottom-up leadership, amplifying the voices of the underrepresented",
-    impact: "This project is in its earliest stage of the 4. When ",
+    impact: "This project is in its earliest stage of the 4. I'm currently working on a few videos to tell those stories," +
+      " and I hope to bring in interviews with other interns I know, as well as speak at Grace Hopper on my experiences.",
     criteriaForSuccess:["Create an industry environment more welcoming of different people",
         "Create policies that benfit minorities in tech", "Teach others ways they can use my strategies at their own companies"],
-    lessonsLearned: [],
+    lessonsLearned: ["Trying is more important than the outcome - at Apple I learned through their frequent canceling of diversity related meetings" +
+    "that it was low priority for them.", "Moderate your directness - At Apple being indirect got you lost in the shuffle, where as" +
+    "Microsoft prefers to handle these things via email as opposed to company-wide petition"],
     budget: 0,
     timeline: 2,
     feedback: [],
@@ -154,7 +161,7 @@ var industryImpact = {
         "communicate on a technical subject to an audience less knowledgeable\n" +
         "than the author. All computer programs are to be completely and fully\n" +
         "documented.","see emails bellow and this github"]],
-    moreStepsToTake:[],
+    moreStepsToTake:["finish videos", "speak at GHC if accepted"],
     myResponsibilities:[],
     remainingPhotos: [],
     emails:[]
@@ -162,18 +169,19 @@ var industryImpact = {
 
 var interviewPrep = {
     name: "Interview Prep Series",
-    photos: ["khoa.JPG"],
+    photos: [eman],
     projectSummary: "I often get Facebook messages asking for advice due to my involvement in Ladies Storm Hackathons, " +
-      "a group of almost 15k women (according to FB's algorithims I am one of the top 6 members creating the most engaging content) " +
+      "a group of almost 15k women (according to FB's algorithms I am one of the top 6 members creating the most engaging content) " +
       "This led me to start a youtube series to help college students prepare for interviews/ industry.",
     problemSpace: "Preparing women and minorities to succeed in interviews",
     impact: "My videos have been watched hundreds of times. Further dozens of viewers have reached out to me on Linkedin." +
       "I've even been sent thank messages from people who watched my videos to prepare and then recieved offers.",
-    criteriaForSuccess:["Audience Members feel more prepared for their interviews","Reduce Audeience member's perceived barriers for entry into industry",
+    criteriaForSuccess:["Audience Members feel more prepared for their interviews","Reduce Audience member's perceived barriers for entry into industry",
     "Personal Goal - Figure out which experiences to highlight vs disgard", "Personal Goal - Find a way to mix my tech experience and stan-up comedy skills to create interesting content"],
     lessonsLearned: ["A 20 minute video can take 8 hours to produce", "Not all of the videos are hits - the biggest influence is if I use Microsoft or Apple in the title",
     "I need to blunt honesty with the knowledge my coworkers may be watching - The head of Microsoft University recruiting has actually reached out" +
     " to me a few times since to discuss them"],
+    doDifferently: "TBD",
     budget: 0,
     timeline: 3,
     feedback: [],
@@ -201,24 +209,24 @@ var interviewPrep = {
         "documented.","see emails bellow and this github"]],
     moreStepsToTake:["Continue the Series"],
     myResponsibilities:[],
-    remainingPhotos: [],
-    emails:[]
+    remainingPhotos: [viewcount],
+    emails:[viewcount]
 };
 
 var conferences = {
     name: "Conference Bootcamp",
-    photos: ["khoa.JPG"],
-    projectSummary: "",
-    problemSpace: "When my dad tried signing my sisters up for coding summercamp, he only found offerings",
-    impact: "Taught 30 middle schoolers",
-    criteriaForSuccess:["a","b"],
-    lessonsLearned: ["Plan guest speakers ahead of time", "delegate", "seperated internal and extrernal communication"],
-    doDifferently: ["Plan less  curriculum", "Being right"],
+    photos: [confhead],
+    projectSummary: "In the past 3 years I've been inivited to speak at: GHC, Tapia, SoCalCWIC, and ISTAS" +
+      "its time I give back at teach more people how they can become a conference speaker",
+    problemSpace: "Diversity at conferences",
+    impact: "TBD - here is what I presented at SoCal CWIC",
+    criteriaForSuccess:["Increased confidence in writing","Students percieve fewer barriers to entry in writing conference proposals"],
+    lessonsLearned: ["Need to approach it from a beginner POV to not intimate viewers"],
     budget: 0,
     timeline: 4,
     feedback: [],
     psychReq: [["Service Project consisting of such activities as creating a manual for a community organization, creating/organizing an event or workshop for a community organization, or making an educational product",
-        "created a summer camp with 7 sessions"]],
+        ""]],
     csReq: [["Technical accomplishment: The technical results presented in the senior\n" +
     "project should reflect the maturity of a senior level student in both the\n" +
     "depth to which the subject is developed and in the degree to which a\n" +
@@ -239,15 +247,16 @@ var conferences = {
         "communicate on a technical subject to an audience less knowledgeable\n" +
         "than the author. All computer programs are to be completely and fully\n" +
         "documented.","see emails bellow and this github"]],
+    doDifferently: "TBD",
     myResponsibilities:[],
-    moreStepsToTake:[],
+    moreStepsToTake:["finish videos"],
     remainingPhotos: [],
     emails:[]
 
 };
 
 
-const PROJECTS = [summercamp, industryImpact, interviewPrep, conferences];
+const PROJECTS = [summercamp, conferences, interviewPrep, industryImpact];
 class App extends Component {
   constructor()
   {
